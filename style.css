@@ -1,0 +1,338 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    height: 100vh;
+}
+
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* Estilo geral de títulos */
+h2.titulo {
+    color: white;
+    font-size: 37px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: blueviolet;
+}
+
+/* Estrutura geral */
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+/* Estilo do cabeçalho */
+header {
+    padding: 20px 4%; /* Menor padding para o cabeçalho */
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    width: 50px; /* Define a largura do logo */
+    height: 50px; /* Define a altura do logo, mantendo o formato quadrado */
+}
+
+header .logo img {
+    width: 100%; /* Ajusta a largura da imagem do logo */
+    height: auto; /* Mantém a proporção da altura */
+    object-fit: contain; /* Garante que a imagem fique dentro do quadrado */
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 10px; /* Ajusta o padding para melhor alinhamento com o logo */
+}
+
+header nav ul li a {
+    color: rgb(42, 43, 44);
+    text-decoration: none;
+    font-size: 16px; /* Ajusta o tamanho da fonte no menu */
+}
+
+header nav ul li a:hover {
+    color: antiquewhite;
+}
+
+button:hover {
+    box-shadow: 0px 0px 8px blueviolet;
+    transform: scale(1.05);
+}
+
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: blueviolet;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* Estilo da seção de topo do site */
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+.topo-do-site .img-topo img {
+    width: 80%; /* Ajuste a largura conforme necessário */
+    max-width: 600px; /* Define um limite máximo para a largura */
+    height: auto; /* Mantém a proporção original da imagem */
+    border-radius: 10px; /* Adiciona um leve arredondamento nas bordas */
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1 {
+    color: aliceblue;
+    font-size: 52px;
+    line-height: 1.2; /* Ajuste a altura da linha */
+}
+
+.topo-do-site .txt-topo-site h1 span {
+    color: blueviolet;
+}
+
+.topo-do-site .txt-topo-site p {
+    color: beige;
+    margin: 50px 0;
+}
+
+/* Estilo da seção de habilidades */
+section.Habilidades {
+    padding: 40px 4%;
+}
+
+.Habilidades .habilidades-box {
+    color: antiquewhite;
+    padding: 45px;
+    text-align: center; /* Centraliza o texto dentro das caixas */
+}
+
+.Habilidades .habilidades-box i {
+    font-size: 70px;
+    color: blueviolet;
+}
+
+.Habilidades .habilidades-box h3 {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+/* Estilo da seção Sobre Mim */
+.sobre {
+    padding: 80px 4%;
+}
+
+.sobre .flex {
+    align-items: center;
+    justify-content: flex-start; /* Alinha os itens à esquerda */
+    gap: 40px; /* Aumentado para mais espaço entre a imagem e o texto */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+.sobre .txt-sobre {
+    color: #fff;
+    max-width: 700px; /* Mantido para dar espaço ao texto */
+}
+
+/* Título */
+section.sobre h2 {
+    color: white;
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 10px; /* Reduzido para posicionar o título mais acima */
+    text-align: center;
+}
+
+section.sobre h2 span {
+    color: blueviolet;
+}
+
+/* Texto principal */
+.sobre .txt-sobre p {
+    margin: 0; /* Remove a margem padrão para ajustar a posição */
+}
+
+/* Estilo da imagem na seção Sobre Mim */
+.sobre .img-sobre {
+    width: 220px; /* Aumentado para melhor organização */
+    height: 220px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+    margin-right: 40px; /* Aumentado para mais espaço entre a imagem e o texto */
+}
+
+.sobre .img-sobre img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Estilo dos ícones sociais na seção Sobre Mim */
+.sobre .btn-social {
+    display: flex;
+    gap: 15px; /* Espaçamento entre os ícones */
+    justify-content: center; /* Centraliza os ícones horizontalmente */
+    margin-top: 20px; /* Adiciona espaçamento superior para os ícones */
+}
+
+.sobre .btn-social button {
+    background-color: blueviolet; /* Cor de fundo roxa */
+    color: white; /* Cor dos ícones */
+    border: none; /* Remove a borda padrão */
+    border-radius: 50%; /* Torna os botões circulares */
+    width: 50px; /* Tamanho do botão */
+    height: 50px; /* Tamanho do botão */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px; /* Tamanho dos ícones */
+    transition: background-color 0.3s, transform 0.3s; /* Transição suave */
+}
+
+.sobre .btn-social button:hover {
+    background-color: darkviolet; /* Cor de fundo quando o cursor passa sobre o botão */
+    transform: scale(1.1); /* Aumenta o tamanho do botão ao passar o cursor */
+}
+
+.sobre .btn-social i {
+    margin: 0; /* Remove margens padrão dos ícones */
+}
+
+
+#projetos {
+    padding: 50px 0;
+    background-color: #121212;
+    color: #fff;
+}
+
+.titulo-secao {
+    text-align: center;
+    color: blueviolet; /* Cor alterada para blueviolet */
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.projetos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre os boxes */
+}
+
+.projeto-box {
+    background-color: #fff;
+    color: #000;
+    width: calc(33.333% - 40px); /* Tamanho responsivo */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    text-decoration: none; /* Remove a sublinha do link */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projeto-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.projeto-img {
+    width: 100%;
+    height: auto;
+}
+
+.projeto-conteudo {
+    padding: 20px;
+}
+
+.projeto-box h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: blueviolet; /* Cor alterada para blueviolet */
+}
+
+.projeto-box p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Estilo do rodapé */
+footer {
+    padding: 20px 4%;
+    background-color: black;
+    color: white;
+}
+
+footer .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .logo-footer img {
+    height: 40px; /* Ajustado para um tamanho menor */
+}
+
+footer .btn-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .btn-social button {
+    background-color: blueviolet; /* Cor de fundo dos ícones */
+    border: 0; /* Remove a borda padrão */
+    border-radius: 50%; /* Torna o ícone circular */
+    padding: 15px; /* Aumenta o tamanho dos ícones */
+    color: white; /* Cor do ícone */
+    cursor: pointer;
+    transition: 0.3s; /* Suaviza a transição ao passar o mouse */
+    font-size: 24px; /* Aumenta o tamanho do ícone */
+}
+
+footer .btn-social button:hover {
+    background-color: darkviolet; /* Cor de fundo ao passar o mouse */
+}
+
+footer .btn-social a {
+    display: inline-block; /* Garante que os ícones se alinhem horizontalmente */
+    margin: 0 10px; /* Espaço entre os ícones */
+    color: white; /* Cor do ícone */
+}
